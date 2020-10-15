@@ -27,3 +27,4 @@ def test(model, device, test_loader):
         100. * correct / len(test_loader.dataset)))
     
     test_acc.append(100. * correct / len(test_loader.dataset))
+    return test_losses, test_acc
